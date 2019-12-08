@@ -1,0 +1,19 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: dubbo-service
+  main:
+    allow-bean-definition-overriding: true
+dubbo:
+  application:
+    version: 1.0.0
+    name: dubbo-service
+  scan:
+    base-packages: wang.ismy.dubbo.service
+  protocol:
+    name: dubbo
+    port: 20880
+  registry:
+    address: zookeeper://my-pc:2181
+    client: zkclient

@@ -1,0 +1,8 @@
+dubbo:
+  application:
+    name: dubbo-consumer
+  registry:
+    address: zookeeper://my-pc:2181
+    client: zkclient
+server:
+  port: 9091
